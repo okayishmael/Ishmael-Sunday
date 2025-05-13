@@ -175,11 +175,7 @@ main {
     background-color: #fff;
     color: #242c38;
   }
-  .menu {
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    background: none;
-  }
+
   .mobile-menu {
     display: none;
   }
