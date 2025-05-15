@@ -5,15 +5,20 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 a {
   text-decoration: none;
   color: inherit;
 }
+
 body {
   background-color: #fff;
   font-size: 16px;
-  font-family: Arial;
+  font-family: "Sans Serif", Arial;
 }
+
 .header {
   /* background-color: #242c38; */
   color: white;
@@ -75,15 +80,19 @@ nav {
 
 .item a:hover,
 .item a:focus {
-  background-color: #242c38;
-  text-decoration: underline;
+  color: #000;
+}
+li.active-link {
+  color: #000;
+  font-weight: 900;
+  opacity: 1;
 }
 
 /* Center website */
-.main,
+
 main,
 .footer-content {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -134,7 +143,162 @@ main,
   letter-spacing: 0.1em;
 }
 
-/*Intro */
+/* Project details styles */
+.project-detail {
+  background-color: #242c38;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.anti-tobacco {
+  background-color: #e0a927;
+  padding: 4rem 2em;
+}
+.au-img,
+.bm-img {
+  max-width: 70%;
+  height: auto;
+}
+.project-detail-content {
+  padding: 6rem 2em;
+  background-color: #efefef;
+}
+.title,
+.project-description {
+  max-width: 500px;
+  margin: auto;
+  color: #242c38;
+  margin-bottom: 1rem;
+}
+.project-description {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.project-detail-image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin: 0;
+}
+/* Directory to section */
+.directory {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #242c38;
+  padding: 0 2em;
+  opacity: 0.7;
+}
+
+/* About me */
+.about-section {
+  padding: 5em 2em;
+  background-color: #efefef;
+}
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 100%;
+  margin: auto;
+}
+.image-icons {
+  width: 35%;
+}
+.about-me-header-content {
+  width: 100%;
+}
+.software-container {
+  display: none;
+}
+
+.about-me-content img {
+  width: 200px;
+  height: auto;
+}
+.my-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #242c38;
+  margin-bottom: 1rem;
+}
+.lead {
+  font-weight: 700;
+}
+.my-description {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #242c38;
+  margin: 1rem 0;
+}
+
+/* accordion */
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-top: #242c38 solid 1px;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.btn {
+  display: inline-block;
+  background-color: #242c38;
+  color: #fff;
+  padding: 1em 2em;
+  border-radius: 5px;
+  font-size: small;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 1em 0;
+  cursor: pointer;
+}
+.btn:hover {
+  border: #242c38 solid 2px;
+  color: #242c38;
+  background-color: transparent;
+  opacity: 0.8;
+}
 /*footer */
 .footer-content {
   display: flex;
@@ -174,27 +338,18 @@ main,
     margin: 0;
   }
   h1 {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
   }
 
   h2 {
     font-size: 2rem;
-  }
-
-  .cta {
-    padding: 8em 2em;
-  }
-  .about-section .container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
   }
 }
 
 /*====MENU===*/
 @media (min-width: 700px) {
   nav {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   .kofa {
@@ -211,18 +366,19 @@ main,
   .disktop-menu {
     display: flex;
     color: #242c38 !important;
-    opacity: 0.7 !important;
+    opacity: 0.4;
     font-size: 0.775rem;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: uppercase;
     list-style: none;
     padding: 0 0 0 2em;
     letter-spacing: 0.1em;
   }
-
-  .intro {
-    text-align: center;
+  .disktop-menu:hover {
+    color: #000;
+    opacity: 1;
   }
+
   .gallery {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -231,13 +387,13 @@ main,
     margin-bottom: 0;
   }
   h1 {
-    font-size: 5.5rem;
+    font-size: 2rem;
     font-weight: 900;
     color: #242c38;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   /*About me */
@@ -280,21 +436,15 @@ main,
     margin-bottom: 0;
   }
   h1 {
-    font-size: 5.5rem;
+    font-size: 1.5rem;
     font-weight: 900;
     color: #242c38;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
-  /*About me */
-  .about-section .container {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
   .img-container,
   .text-content {
     width: 45%;
@@ -304,5 +454,40 @@ main,
   }
   .about-content {
     font-size: 1.125rem;
+  }
+  .directory {
+    padding: 0;
+  }
+  .about-me-content img {
+    width: 100%;
+    height: auto;
+    border: #242c38 solid 2px;
+    border-radius: 5px;
+  }
+  .about-me-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    max-width: 60%;
+    margin: auto;
+  }
+
+  .software-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .software {
+    padding: 0.5rem;
+    background-color: #dadada;
+    color: #242c38;
+  }
+  .about-me-header-content {
+    width: 65%;
   }
 }
