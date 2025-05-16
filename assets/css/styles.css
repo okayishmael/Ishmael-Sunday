@@ -223,16 +223,25 @@ img {
   max-width: 100%;
   margin: auto;
 }
-.image-icons {
-  width: 35%;
-}
+
 .about-me-header-content {
   width: 100%;
 }
-.software-container {
-  display: none;
-}
 
+.software-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.software {
+  padding: 0.5rem;
+  background-color: #dadada;
+  color: #242c38;
+}
 .about-me-content img {
   width: 200px;
   height: auto;
@@ -366,7 +375,9 @@ img {
     max-width: 1200px;
     margin: 0 auto;
   }
-
+  .image-icons {
+    width: 35%;
+  }
   .kofa {
     color: #242c38;
   }
@@ -491,20 +502,6 @@ img {
     margin: auto;
   }
 
-  .software-container {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 2rem 0;
-    flex-wrap: wrap;
-    max-width: 100%;
-  }
-  .software {
-    padding: 0.5rem;
-    background-color: #dadada;
-    color: #242c38;
-  }
   .about-me-header-content {
     width: 65%;
   }
