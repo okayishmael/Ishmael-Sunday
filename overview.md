@@ -14,6 +14,7 @@ For this project, you will build a personal portfolio site, a static website whe
 
 ## Prerequisites:
 
+- Design(Wireframe and High Fidelity mockup)
 - HTML/CSS()
 - JavaScript
 - Git and GitHub

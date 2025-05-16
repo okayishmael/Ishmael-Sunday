@@ -335,7 +335,7 @@ img {
 
   .gallery {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
   .image-container {
     margin: 0;
@@ -355,6 +355,7 @@ img {
     max-width: 1200px;
     margin: 0 auto;
   }
+
   .kofa {
     color: #242c38;
   }
@@ -384,7 +385,8 @@ img {
 
   .gallery {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
   }
   .image-container {
     margin-bottom: 0;
@@ -423,6 +425,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 3rem 2rem 2em 2em;
   }
 }
 @media (min-width: 900px) {
@@ -432,7 +435,8 @@ img {
   }
   .gallery {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 1em;
   }
   .image-container {
