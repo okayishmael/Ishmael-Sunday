@@ -172,7 +172,7 @@ img {
   margin-bottom: 1rem;
 }
 .project-description {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 .project-detail-image-content {
@@ -230,10 +230,10 @@ img {
   margin-bottom: 1rem;
 }
 .lead {
-  font-weight: 700;
+  font-weight: 500;
 }
 .my-description {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: #242c38;
   margin: 1rem 0;
