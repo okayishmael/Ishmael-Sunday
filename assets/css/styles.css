@@ -13,6 +13,12 @@ a {
   color: inherit;
 }
 
+.inline-link {
+  text-decoration: underline;
+  color: #242c38;
+  font-weight: 900;
+}
+
 body {
   background-color: #fff;
   font-size: 16px;
@@ -173,6 +179,11 @@ img {
 .project-description {
   font-size: 1rem;
   line-height: 1.5;
+}
+.project-requirement {
+  padding-left: 1rem;
+  max-width: 500px;
+  margin: auto;
 }
 .project-detail-image-content {
   display: flex;
