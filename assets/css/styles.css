@@ -305,6 +305,7 @@ img {
 .btn {
   display: inline-block;
   background-color: #242c38;
+  border: #242c38 solid 2px;
   color: #fff;
   padding: 1em 2em;
   border-radius: 5px;
