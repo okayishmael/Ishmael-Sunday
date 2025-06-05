@@ -47,10 +47,12 @@ nav {
 }
 
 .kofa {
+  font-family: "Montserrat", sans-serif;
   font-size: 34px;
   font-weight: 900;
   color: #242c38;
   text-decoration: none;
+  text-transform: lowercase;
 }
 
 .item {
@@ -85,10 +87,10 @@ nav {
 
 .disktop-menu a:hover,
 .disktop-menu a:focus {
-  color: #000;
+  color: #242c38;
 }
 li.active-link {
-  color: #000;
+  color: #242c38;
   font-weight: 900;
   opacity: 1;
 }
