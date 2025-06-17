@@ -217,6 +217,7 @@ img {
 .about-section {
   padding: 5em 2em;
   background-color: #efefef;
+  border-radius: 15px;
 }
 .about-me-content img {
   border: #242c38 solid 2px;
