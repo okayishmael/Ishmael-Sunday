@@ -20,9 +20,9 @@ a {
 }
 
 body {
-  background-color: #fff;
+  background-color: #fbfcf4;
   font-size: 16px;
-  font-family: "Sans Serif", Arial;
+  font-family: "Montserrat", sans-serif;
 }
 
 .header {
@@ -44,15 +44,18 @@ nav {
 }
 .logo {
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .kofa {
-  font-family: "Montserrat", sans-serif;
-  font-size: 34px;
-  font-weight: 900;
-  color: #242c38;
-  text-decoration: none;
-  text-transform: lowercase;
+  display: none;
+}
+#ish-icon {
+  width: 26px;
+  height: 26px;
+  margin-right: 0.5em;
 }
 
 .item {
@@ -139,7 +142,7 @@ main,
 
 .overlay-text {
   white-space: nowrap;
-  color: white;
+  color: #fbfcf4;
   font-size: 20px;
   position: absolute;
   overflow: hidden;
@@ -172,7 +175,7 @@ img {
 }
 .project-detail-content {
   padding: 6rem 2em;
-  background-color: #efefef;
+  background-color: #eeefe6;
   border-radius: 15px 15px 0 0;
 }
 .title,
@@ -216,7 +219,7 @@ img {
 /* About me */
 .about-section {
   padding: 5em 2em;
-  background-color: #efefef;
+  background-color: #eeefe6;
   border-radius: 15px !important;
 }
 .about-me-content img {
@@ -272,7 +275,7 @@ img {
 /* accordion */
 
 .accordion {
-  background-color: #eee;
+  background-color: #eeefe6;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -283,6 +286,7 @@ img {
   font-size: 15px;
   transition: 0.4s;
   border-top: #242c38 solid 1px;
+  font-family: inherit;
 }
 
 .active,
@@ -304,7 +308,7 @@ img {
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: #fbfcf4;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -313,7 +317,7 @@ img {
   display: inline-block;
   background-color: #242c38;
   border: #242c38 solid 2px;
-  color: #fff;
+  color: #fbfcf4;
   padding: 1em 2em;
   border-radius: 5px;
   font-size: small;
@@ -356,6 +360,15 @@ img {
 }
 /*Media Query / Responsiveness */
 @media (min-width: 533px) {
+  .kofa {
+    display: inline;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    color: #242c38;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
   .intro {
     padding: 5em 2em;
     text-align: center;
@@ -390,7 +403,7 @@ img {
     color: #242c38;
   }
   .header {
-    background-color: #fff;
+    background-color: transparent;
     color: #242c38;
   }
 
